@@ -29,6 +29,10 @@
   max-width: 350px;
   /* backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px); For Safari */
+
+  font-size: 1.2rem;
+  color: #1d1d1d;
+  
 }
 
 form {
@@ -40,14 +44,14 @@ label {
   display: flex;
   flex-direction: column;
   gap: 6px; /* space between label text and input */
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 16px; /* space between fields */
 }
 
 input[type="text"],
 input[type="password"] {
   padding: 8px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-radius: 4px;
   border: 1px solid #ccc;
 }
@@ -95,4 +99,26 @@ button[type="submit"]:hover {
   width: 60px; /* Adjust size as needed */
   height: auto;
   z-index: 1000;
+}
+
+.logout-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 0;
+  background: none;
+  color: #1d1d1d;
+  border: none;
+  border-radius: 0;
+  font-size: 1.6rem;
+  cursor: pointer;
+  z-index: 1000;
+  text-decoration: none;
+  transition: text-decoration 0.2s;
+}
+
+.logout-btn:hover {
+  background: none;
+  
+  text-decoration: underline;
 }
