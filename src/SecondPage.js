@@ -37,7 +37,7 @@ function SecondPage() {
               />
             </label>
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit">SUBMIT</button>
         </form>
       </header>
     </div>

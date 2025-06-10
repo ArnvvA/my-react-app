@@ -37,7 +37,7 @@ function LoginPage({ onLogin, storeNumber, setStoreNumber, password, setPassword
             />
           </label>
         </div>
-        <button type="submit">Login</button>
+        <button type="submit">LOGIN</button>
       </form>
     </header>
   );
