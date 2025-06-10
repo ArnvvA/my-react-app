@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import logo from './assets/logo.webp';
-import { ReactComponent as tagSVG } from './assets/ucb-tag.svg';
+import { ReactComponent as TagSVG } from './assets/ucb-tag.svg';
 import SecondPage from './SecondPage';
 
 function LoginPage({ onLogin, storeNumber, setStoreNumber, password, setPassword }) {
@@ -58,7 +58,7 @@ function App() {
     <Router>
       <div className="App">
         <img src={logo} alt="Logo" className="logo" />
-        <img src={tagSVG} className="tag-svg" />
+        <TagSVG className="tag-svg" />
         {loggedIn && (
           <button className="logout-btn" onClick={handleLogout}>
             LOG OUT
