@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import logo from './assets/logo.webp';
+import { ReactComponent as tagSVG } from './assets/ucb-tag.svg';
 import SecondPage from './SecondPage';
 
 function LoginPage({ onLogin, storeNumber, setStoreNumber, password, setPassword }) {
@@ -12,7 +13,7 @@ function LoginPage({ onLogin, storeNumber, setStoreNumber, password, setPassword
 
   return (
     <header className="App-header">
-      <h2>Login</h2>
+      <h2>LOGIN</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label>
@@ -57,6 +58,7 @@ function App() {
     <Router>
       <div className="App">
         <img src={logo} alt="Logo" className="logo" />
+        <img src={tagSVG} className="tag-svg" />
         {loggedIn && (
           <button className="logout-btn" onClick={handleLogout}>
             LOG OUT
