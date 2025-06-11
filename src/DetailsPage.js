@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function SecondPage() {
+function DetailsPage() {
   const [field1, setField1] = useState('');
   const [field2, setField2] = useState('');
 
@@ -44,4 +44,4 @@ function SecondPage() {
   );
 }
 
-export default SecondPage;
+export default DetailsPage;

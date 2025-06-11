@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import './App.css';
 import logo from './assets/logo.webp';
 import { ReactComponent as TagSVG } from './assets/ucb-tag.svg';
-import SecondPage from './SecondPage';
+import DetailsPage from './DetailsPage';
 
 function LoginPage({ onLogin, storeNumber, setStoreNumber, password, setPassword }) {
   const handleSubmit = (e) => {
@@ -83,7 +83,7 @@ function App() {
             path="/details"
             element={
               loggedIn
-                ? <SecondPage />
+                ? <DetailsPage />
                 : <Navigate to="/login" />
             }
           />
