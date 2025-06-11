@@ -123,3 +123,24 @@ button[type="submit"]:hover {
   
   text-decoration: underline;
 }
+
+/* Add to App.css */
+.details-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #000;
+}
+
+.tab.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
